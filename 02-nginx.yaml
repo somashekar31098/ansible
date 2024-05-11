@@ -1,7 +1,7 @@
-- name: installing the nginx
+- name: install and run nginx
   host: web
   become: yes #givng root access like in adhoc commands
-  task:
+  tasks:
   - name: install nginx
     ansible.builtin.dnf:
         name: nginx

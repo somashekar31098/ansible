@@ -3,11 +3,11 @@
   become: yes #givng root access like in adhoc commands
   task:
   - name: install nginx
-      ansible.builtin.dnf:
+    ansible.builtin.dnf:
         name: nginx
         state: install
   - name: start nginx
-      ansible.builtin.service:
+    ansible.builtin.service:
         name: nginx 
         state: started
         enabeld: yes

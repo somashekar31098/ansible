@@ -1,6 +1,6 @@
 - name: writing multiplaybook
   hosts: localhost
   tasks:
-  - name: playbook 1 and task 1
-    ansible.builtin.debug:
-    msg: " i am writng play 1 and task 1"
+   - name: playbook 1 and task 1
+     ansible.builtin.debug:
+     msg: " i am writng play 1 and task 1"

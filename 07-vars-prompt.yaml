@@ -1,6 +1,5 @@
 - name: vars from prompt
   hosts: localhost
-  task:
   vars_prompt:
   - name: USER
     prompt: please provide user
@@ -8,6 +7,7 @@
   - name: PASSWORD
     prompt: please provide password
     private: false
-  task:
+  task: 
+  - name: provide information
     ansible.builtin.debug:
      msg: "please provide {{USER}}, and {{PASSWORD}}"

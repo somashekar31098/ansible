@@ -7,7 +7,7 @@
   - name: PASSWORD
     prompt: please provide password
     private: false
-  task: 
+  tasks: 
   - name: provide information
     ansible.builtin.debug:
      msg: "please provide {{USER}}, and {{PASSWORD}}"

@@ -1,5 +1,5 @@
 -name: writing multiplaybook
- host: localhost
+ hosts: localhost
  task:
   -name: playbook 1 and task 1
    ansible.builtin.debug:

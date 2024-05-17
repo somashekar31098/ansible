@@ -1,8 +1,9 @@
 - name: variables from files
   hosts: localhost
   tasks:
-    - name: learning devops
-      vars:
-      -vars.yaml
-      ansible.builtin.debug:
-      msg: "i am learning {{course}} from {{trainer}} for {{time}}"
+  - name: writing vars 
+    vars:
+    - vars.yaml
+    ansible.builtin.debug:
+     msg: "i am learning {{course}} from {{trainer}} for {{time}}"
+    

@@ -4,3 +4,12 @@
   - name: default value 
     ansible.builtin.debug:
      msg: "i am learning {{ course | default('devops') }}"
+
+  - name: changing to uppercase
+    hosts: localhost
+    vars:
+     greetings: "hi ,goodmorning"
+    tasks"
+    - name: change to uppercase
+      ansible.builtin.debug:
+       msg: "{{ greetings | upper }}"
